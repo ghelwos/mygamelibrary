@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "game.h"
+#include "ajout.h"
 
 #include <QApplication>
 #include <QLocale>
