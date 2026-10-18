@@ -1,6 +1,4 @@
 #include "mainwindow.h"
-#include "game.h"
-#include "ajout.h"
 
 #include <QApplication>
 #include <QLocale>
@@ -22,9 +20,6 @@ int main(int argc, char *argv[])
     }
 
     MainWindow w;
-
-    w.setWindowTitle("My Game Library");
-    w.setWindowIcon(QIcon(":/icon.png"));
 
     /*
     qDebug()<<screen_size.width();
