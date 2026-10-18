@@ -8,7 +8,7 @@ ajout::ajout(QWidget *parent)
     ui->setupUi(this);
     this->setModal(true);
     this->setWindowTitle("Adding a game");
-    this->setWindowIcon(QIcon("add.png"));
+    this->setWindowIcon(QIcon(":/add.png"));
 }
 
 ajout::~ajout()
@@ -40,5 +40,11 @@ void ajout::on_pushButton_2_clicked()
 
     if (!file.isEmpty())
         ui->lineEdit_2->setText(file);
+}
+
+
+void ajout::on_ajout_accepted()
+{
+
 }
 
