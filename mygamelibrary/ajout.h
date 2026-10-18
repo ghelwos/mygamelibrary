@@ -2,6 +2,9 @@
 #define AJOUT_H
 
 #include <QDialog>
+#include <QDir>
+#include <QFileDialog>
+#include <QLineEdit>
 
 namespace Ui {
 class ajout;
@@ -14,6 +17,11 @@ class ajout : public QDialog
 public:
     explicit ajout(QWidget *parent = nullptr);
     ~ajout();
+
+private slots:
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::ajout *ui;
