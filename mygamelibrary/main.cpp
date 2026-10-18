@@ -21,11 +21,6 @@ int main(int argc, char *argv[])
 
     MainWindow w;
 
-    /*
-    qDebug()<<screen_size.width();
-    qDebug()<<screen_size.height();
-    */
-
     w.showMaximized();
     return QApplication::exec();
 }

@@ -30,6 +30,17 @@
      <string>+</string>
     </property>
    </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>801</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gamesGrid"/>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

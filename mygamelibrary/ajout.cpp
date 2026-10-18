@@ -42,9 +42,10 @@ void ajout::on_pushButton_2_clicked()
         ui->lineEdit_2->setText(file);
 }
 
-
-void ajout::on_ajout_accepted()
-{
-
+std::vector<QVariant> ajout::return_game_values() {
+    std::vector<QVariant> res;
+    res.push_back(ui->lineEdit_3->text());
+    res.push_back(ui->lineEdit->text());
+    res.push_back(ui->lineEdit_2->text());
+    return res;
 }
-

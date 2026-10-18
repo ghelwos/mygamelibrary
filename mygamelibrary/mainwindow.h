@@ -2,7 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QLabel>
+#include <vector>
 #include "ajout.h"
+#include "game.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -17,6 +20,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow() override;
+    std::vector<game> games;
 
 private slots:
     void on_pushButton_clicked();
@@ -24,5 +28,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
     ajout aj;
+
 };
 #endif // MAINWINDOW_H
